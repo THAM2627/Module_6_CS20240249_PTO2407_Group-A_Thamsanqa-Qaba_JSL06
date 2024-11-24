@@ -16,7 +16,8 @@ function displayMenuItems(menu) {
         const elementCategory = document.createElement('div');
         elementCategory.classList.add('category');
         // Set the text content of the category element to the category name
-        const categoryText = document.createElement
+        const categoryText = document.createElement ('menu');
+        categoryText.innerText = category.charAt(0).toUpperCase() + category.slice (1) //captiialize letters
         // Append the category element to the menu container
 
         // Create an element to represent a list of items
