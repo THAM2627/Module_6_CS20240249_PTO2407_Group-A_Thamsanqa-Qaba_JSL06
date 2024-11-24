@@ -34,7 +34,9 @@ function displayMenuItems(menu) {
             itemsList.appendChild(itemElement);
             
             };
+         // Attach a click event listener to the list item to add it to the order
 
+            listItems.addEvent('click', () => {addToOrder(item)});
             categoryElement.appendChild(itemsList);
             menuContainer.appendChild(elementCategory);
             
@@ -42,8 +44,7 @@ function displayMenuItems(menu) {
 
             // Set the text content of the list item element to the item name
 
-            // Attach a click event listener to the list item to add it to the order
-            listItems.addEvent('click', () => {addToOrder(item)};)
+           
 
             // Append the list item to the list of items
 
