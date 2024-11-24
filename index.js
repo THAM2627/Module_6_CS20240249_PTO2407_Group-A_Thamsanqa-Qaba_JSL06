@@ -41,7 +41,7 @@ function displayMenuItems(menu) {
         menu[category].forEach( item => {
             const itemElement = document.createElement('li');
             itemElement.classList.add('menu-item');
-            itemElement.innerHTML = <strong>$(item.name)</strong> - $(item.price)};
+            itemElement.innerHTML = <strong>'$(item.name)</strong> - $(item.price)});
             itemsList.appendChild(itemElement);
             
             };
