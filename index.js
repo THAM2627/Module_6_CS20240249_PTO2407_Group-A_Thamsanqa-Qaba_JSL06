@@ -56,7 +56,8 @@ function addToOrder(itemName) {
     const orderList = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
     // Create a list item for the order
-
+    const orderItem = document.createElement('li');
+    orderItem.innerText = '${item.name} - $${items.price.toFixed(2)}';
     // Set the text content of the list item to the item name
 
     // Append the list item to the order items list
