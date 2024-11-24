@@ -22,11 +22,21 @@ function displayMenuItems(menu) {
         // Append the category element to the menu container
 
         // Create an element to represent a list of items
-        
+
         // Append a list of items element to the menu container
 
         // Loop through the items in the category and create list items
+        const listItems = document.createElement('ul');
+        menu[category].forEach( item => {
+            const itemElement = document.createElement('li');
+            itemElement.classList.add('menu-item');
+            itemElement.innerHTML = <strong>$(item.name)</strong> - $(item.price)};
+            itemsList.appendChild(itemElement);
+            
+            };
 
+            categoryElement.appendChild(itemsList);
+            menuContainer.appendChild(elementCategory);
             // Create a list item element
 
             // Set the text content of the list item element to the item name
