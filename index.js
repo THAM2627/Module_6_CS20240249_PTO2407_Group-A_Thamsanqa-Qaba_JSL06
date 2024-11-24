@@ -1,8 +1,19 @@
 // Sample menu data (Consider fetching this data from a server in a real-world scenario)
 const menu = {
-    Starters: ["Garlic Bread", "Bruschetta"],
-    MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
-    Desserts: ["Tiramisu", "Cheesecake"]
+    Starters: [ 
+        {name:"Garlic Bread", price:100},
+        {name:"Bruschetta" ,price:80}
+    ],
+
+    MainCourses: [
+        {name:"Margherita Pizza", price:150},
+        {name:"Spaghetti Carbonara", price:130}
+    ],
+
+    Desserts: [
+        {name:"Tiramisu",price:80},
+        {name:"Cheesecake",price:60}
+    ]
 };
 
 // Function to display menu items by category
@@ -73,7 +84,8 @@ function updateTotalOrder(itemPrice,orderTotal) {
 currentTotal += itemPrice;
 orderTotal.innerText = 'Total: $${currentTotal.toFixed(2)}';
 // Function to initialize the menu system
-function initMenuSystem(menu) {
+function initMenuSystem(menu) { 
+    displayMenuItems();
     // Call the function to display menu items
 }
 
