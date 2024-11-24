@@ -61,12 +61,17 @@ function addToOrder(itemName) {
     // Set the text content of the list item to the item name
 
     // Append the list item to the order items list
-
+    orderList.appendChild(orderItem);
     // Calculate and update the total price
+    updateTotalOrder(item.price, orderTotal);
 
     // Update the text content of the order total element with the new total
 }
-
+function updateTotalOrder(itemPrice,orderTotal) {
+    let currentTotal = parseFloat (orderTotal.innerText.replace ('Total: $', ''))
+}
+currentTotal += itemPrice;
+orderTotal.innerText = 'Total: $${currentTotal.toFixed(2)}';
 // Function to initialize the menu system
 function initMenuSystem(menu) {
     // Call the function to display menu items
