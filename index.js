@@ -8,7 +8,8 @@ const menu = {
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
-
+    let menu = document.getElementById('menu');
+    console.log(menu)
     // Loop through each category and its items in the menu object
 
         // Create an element to represent the category
